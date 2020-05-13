@@ -31,3 +31,5 @@ Z = 1+sqrt(1+3/((L_D_max^2)*T*T/(W^2)));
 RateOfClimb_max = ((T*Z/S)/(3*rho*C_D_0))*(T/W-Z*T/(6*W)-6*K*C_D_0/(T*Z/W));
 V_theta_max = sqrt((2/rho)*((K/C_D_0)^2)*W/S*cos(theta_max));
 RC_theta_max = V_theta_max*sin(theta_max);
+V  = 163.8747;
+R_C = V.*(T/W-0.5*rho*(V.^2)*(S/W)*C_D_0-W/S*2*K./(rho*V.^2));
