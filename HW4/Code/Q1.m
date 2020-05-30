@@ -68,4 +68,4 @@ plot(C_L, eq);
 xlabel('$C_L$', 'Interpreter','latex','FontSize', 20)
 ylabel('$\frac{dR}{dC_L}$', 'Interpreter','latex','FontSize', 20);
 [R_max_withWind, C_L_R_max_withWind] = max(R);
-C_L_R_max_withWind = C_L_R_max_withWind/10000;
+C_L_R_max_withWind = C_L_R_max_withWind/10000; 
