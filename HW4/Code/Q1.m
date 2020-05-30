@@ -25,10 +25,10 @@ Service_Ceiling(1,1:65616) = 100/60;
 hold
 plot(h_t, Service_Ceiling)
 h_ans(1,1:100) = 31118;
-x(1,1:100) = 100/60;
+x(1:1:100) = 100/60;
 plot(h_ans, x, '--')
 
-legend({'$R_{C_{\max}}$'},'Interpreter','latex','FontSize', 20);
+legend({'$R_{C_{\max}}$', '$Service~Ceiling$'},'Interpreter','latex','FontSize', 20);
 title('maximum rate of climb versus altitude');
 text(11462,6200,'Service ceiling');
 h_Service_ceiling = 0;
