@@ -1,0 +1,13 @@
+b = 17;
+S = 37.8;
+W = 960;
+T = 202;
+K = 0.062;
+C_D_0 = 0.02;
+g = 32.1741;
+rho = 23.77e-4;
+R_min = 4*K*(W/S)/(g*rho*(T/W)*sqrt(1-4*C_D_0*K/((T/W)^2)));
+V_omega_max = sqrt(2*(W/S)/rho)*(K/C_D_0)^0.25;
+q = 0.5*rho*V_omega_max^2;
+omega_max = g*sqrt(rho/(W/S)*((T/W)/(2*K)-sqrt(C_D_0/K)));
+V_infty = sqrt(R_min*g*sqrt(5^2-1));
